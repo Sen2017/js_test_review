@@ -8,15 +8,16 @@ var monster = "Dragon";
 
 var weaponChest = ["Mace", "Sorcerer's Stone", "Excalibur"];
 
-var hero {
-	wizard = "Merlin",
-	weapon = weaponChest[2],
-	pwr = 32
+var hero = {
+	wizard : "Merlin",
+	weapon : weaponChest[2],
+	pwr : 10
 }
+
 
 function swordInTheStone(worthy){
 	if (worthy == "Arthur"){
-		console.log("We have found our king" + worthy + ".");
+		console.log("We have found our king " + worthy + ".");
 	}else{
 		console.log("We must keep searching for " + worthy + " is unworthy.")
 	}
@@ -24,7 +25,7 @@ function swordInTheStone(worthy){
 
 swordInTheStone(knight);
 
-//Hail the King
+//Hail the King 
 
 function trueLove(king, queen){
 	if (queen == "Guinevere" && king == "Arthur"){
@@ -40,13 +41,13 @@ trueLove(maiden, knight);
 
 function epicBattle(wizard, enemy, power){
 	if (power <= 15){
-		console.log("Our " + wizard + " has fallen.");
+		console.log("Our " + hero.wizard + " has fallen.");
 	}
 	else if (power >= 16 && power <= 40){
-		console.log(wizard + " has almost slain " + enemy + ".");
+		console.log(hero.wizard + " has almost slain " + enemy + ".");
 	}else{
-		console.log("Our " + wizard + " has slain the " + enemy + "!");
+		console.log("Our " + hero.wizard + " has slain the " + enemy + "!");
 	}
 }
 
-epicBattle(hero.wizard, monster, hero.pwr);
+epicBattle(hero.wizard , monster, hero.pwr);
