@@ -9,9 +9,9 @@ var monster = "Dragon";
 var weaponChest = ["Mace", "Sorcerer's Stone", "Excalibur"];
 
 var hero {
-	wizard = "Merlin";
-	weapon = weaponChest[2];
-	pwr = 32;
+	wizard = "Merlin",
+	weapon = weaponChest[2],
+	pwr = 32
 }
 
 function swordInTheStone(worthy){
